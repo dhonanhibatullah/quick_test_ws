@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dhonandev_ws | quick count</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body>
+        <div class="login-box">
+            <h2>Hitung Dosis</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="bb" id="weight">
+                    <label>Berat badan</label>
+                </div>
+                <a onclick="directFunc()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Enter
+                </a>
+            </form>
+        </div>
+
+        <script>
+            function directFunc() {
+                var weight_str = document.getElementById("weight").value;
+                window.location.assign("https://script.google.com/macros/s/AKfycbyj8yzaU1fGRI0b8410BdCRjaFh1aH7kmUM3GmYVYBQs7vtAlCMzf_fNJGXd3rRYdQTnA/exec?bb=" + weight_str);
+            }
+        </script>
+    </body>
+</html>
